@@ -1,0 +1,42 @@
+---
+title: "June 10"
+output: html_document
+date: '2022-06-10'
+---
+
+<!-- comment function: Command + shift + C 
+     run line function: command + return -->
+
+<!-- Operators -->
+TRUE & TRUE <!-- "&" functions like AND in CPSC121 -->
+TRUE & FALSE
+
+<!-- note: lowercase text makes objects. UPPERCASE is value -->
+
+<!-- == means "enquiry into the data. Not "equal to." Issa boolean operator -->
+<!-- "<-" or "=" means instantiate the object. manifests a new thing -->
+x = 7 <!-- aka x <- 2 -->
+x == 2 <!-- returns TRUE. Because x is indeed =  -->
+x == 7 <!-- returns false. Because x does not = 7. -->
+
+<!-- Using == and & together -->
+name = "Fred"
+(x == 2) & (name == "Fred") <!-- note that brackets are not necessary to R syntax but it helps look understandable -->
+
+<!-- "|" means "OR" like in CPSC121 -->
+(x == 2) | (name == "Fred")
+
+<!-- "!" is NOT boolean operator -->
+!TRUE <!-- returns FALSE -->
+name == "Fred" <!-- return FALSE -->
+name != "Fred" <!-- returns TRUE -->
+
+<!-- Vectors: a collection of data. Like an array in Java. -->
+city <- c("Vancouver", "Victoria", "Delta", "Surrey") <!-- note this syntax structure. the c(..) is important-->
+                                                      <!-- Each data piece has a index number. That is their place in line. -->
+city-temp <- c(25, 20, 27, 30) <!-- 
+                                                      
+<!-- Extracting a data point:  -->
+city[1] returns "Vancouver"
+city [2] returns "Victoria"
+city [5] returns "NA" because it does not exist

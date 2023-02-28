@@ -1,0 +1,61 @@
+---
+title: "June1.rmd"
+output: html_document
+date: '2022-06-01' 
+---
+
+<!-- # use "#" to write comments -->
+
+<!-- #Run code: -->
+
+10+10
+3^6
+
+<!-- # To run code: highlight the lines u want to run. then press "Run selcted lines" -->
+<!-- # R is not whitespace sensitive but it is case-sensitive -->
+<!-- #making objects -->
+
+temp_today <- 19 <!-- manifests a thing in the environment and assigns a value to it -->
+temp_tomorrow <- 17
+temp_Sunday <- 13
+x <- -7 
+
+<!-- \# "=" also works to manifest objects  -->
+y = 7 
+z = x-y
+
+<!-- #Data Types -->
+
+<!-- #Characters -->
+
+<!-- #Doubles -->
+typeof(temp_today)
+
+<!-- #Characters -->
+name <- "Fred"
+typeof(name)
+
+<!-- #Logicals (like Booleans) -->
+COMM_205_is_amazing <- TRUE
+typeof(COMM_205_is_amazing)
+
+<!-- #Implicit Coercion 
+If you add TRUE + TRUE you get 2 (which is 1 + 1)
+Think CPSC121. TRUE = 1 and FALSE = 0
+
+TEST: -->
+TRUE + TRUE
+
+<!-- You cannot add characters + doubles -->
+"Fred" + 7
+
+<!-- But you //CAN// add characters + logicals, Since TRUE = 1 -->
+temp_today + TRUE
+
+<!-- Double equals "==" means "is x = y" -->
+name == "Adam" <!-- should return false -->
+
+
+<!-- To comment (technically) -->
+# comment
+idk why its not working this way though
